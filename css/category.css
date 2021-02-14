@@ -85,6 +85,14 @@ ol a:hover {
   margin-top: 10rem;
   font-size: 3rem;
 }
+footer {
+  background-color: black;
+}
+footer p {
+  color: white;
+  size: 3rem;
+  padding: 2rem;
+}
 
 @media only screen and (max-width: 725px) {
   .category {
@@ -118,11 +126,6 @@ ol a:hover {
   color: #a1a1a1;
 }
 
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-}
 .item {
   display: flex;
   flex-flow: column;
@@ -141,38 +144,38 @@ h2 {
 .subtle {
   color: #a1a1a1;
 }
-.products article h3 {
+article h3 {
   font-size: 1rem;
   flex-grow: 3;
 }
-.products article.soldOut img {
+article.soldOut img {
   opacity: 0.5;
 }
-.products article.soldOut::before {
+article.soldOut::before {
   content: "Sold Out";
   position: absolute;
   background: var(--color);
   color: var(--background-color);
   padding: 1rem;
 }
-.products article .discounted,
-.products article .price span {
+article .discounted,
+article .price span {
   display: none;
 }
-.products article.onSale .discounted {
+article.onSale .discounted {
   display: flex;
   justify-content: space-between;
 }
 .discounted > p {
   margin-bottom: 0;
 }
-.products article.onSale .price span {
+article.onSale .price span {
   display: initial;
 }
-.products article button {
+article button {
   margin-top: auto;
 }
-.products article {
+article {
   margin-bottom: 1rem;
 }
 .discounted p:last-child {
@@ -182,6 +185,9 @@ h2 {
 .onSale p.sale {
   background-color: coral;
   padding: 0.3rem;
+}
+.onSale p.disprice {
+  color: red;
 }
 .item a {
   color: #a1a1a1;

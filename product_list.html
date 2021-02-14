@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/category.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="globalNav">
@@ -18,32 +19,33 @@
       </nav>
     </header>
 
-    <main>
-      <section class="categoryNames">
-        <ol class="categories">
-          <li>
-            <a href="product_list.html"> Accessories </a>
-          </li>
-          <li>
-            <a href="product_list.html"> Apparel </a>
-          </li>
-          <li>
-            <a href="product_list.html"> Footwear </a>
-          </li>
-          <li>
-            <a href="product_list.html"> Personal Care </a>
-          </li>
-          <li>
-            <a href="product_list.html"> Sporting Goods </a>
-          </li>
-          <li>
-            <a href="product_list.html"> Sales </a>
-          </li>
-        </ol>
-      </section>
+    <section class="categoryNames">
+      <ol class="categories">
+        <li>
+          <a href="product_list.html"> Accessories </a>
+        </li>
+        <li>
+          <a href="product_list.html"> Apparel </a>
+        </li>
+        <li>
+          <a href="product_list.html"> Footwear </a>
+        </li>
+        <li>
+          <a href="product_list.html"> Personal Care </a>
+        </li>
+        <li>
+          <a href="product_list.html"> Sporting Goods </a>
+        </li>
+        <li>
+          <a href="product_list.html"> Sales </a>
+        </li>
+      </ol>
+    </section>
 
-      <h2>APPAREL</h2>
-      <div class="products">
+    <h2>APPAREL</h2>
+
+    <main>
+      <template id="itemTemplate">
         <article class="item">
           <img
             src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp"
@@ -53,13 +55,14 @@
           <p class="subtle">Tshirts | Nike</p>
           <p class="price"><span>Prev.</span> DKK 1595,-</p>
           <div class="discounted">
-            <p>Now DKK 1560,-</p>
+            <p class="disprice">Now DKK 1560,-</p>
             <p class="sale">-34%</p>
           </div>
           <a href="product.html">Read More</a>
         </article>
+      </template>
 
-        <article class="item onSale">
+      <!--<article class="item onSale">
           <img
             src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp"
             alt=""
@@ -102,9 +105,14 @@
             <p class="sale">-34%</p>
           </div>
           <a href="product.html">Read More</a>
-        </article>
-      </div>
-      >
+        </article> -->
     </main>
+    <footer>
+      <p>
+        All data comes from :
+        https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset
+      </p>
+    </footer>
+    <script src="js/productlist.js"></script>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/category.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="product">
     <header class="globalNav">
@@ -20,7 +21,7 @@
     <main>
       <section class="categoryNames">
         <ol class="categories">
-          <li>
+          <li class="brand">
             <a href="product_list.html"> Accessories </a>
           </li>
           <li>
@@ -42,11 +43,7 @@
       </section>
       <br />
       <p class="prodName">Mean Team India Cricket Jersey</p>
-      <img
-        class="prodImg"
-        src="https://kea-alt-del.dk/t7/images/webp/1000/1165.webp"
-        alt="Mean Team India Cricket Jersey"
-      />
+      <img class="prodImg" src="" alt="Mean Team India Cricket Jersey" />
       <section class="purchaseBox">
         <h3>Mean Team India Cricket Jersey</h3>
         <p>Nike | Tshirts</p>
@@ -68,15 +65,22 @@
         <h2>Product Information</h2>
         <dl>
           <dt>Model name</dt>
-          <dd>Mean Team India Cricket Jersey</dd>
+          <dd class="prodName">Mean Team India Cricket Jersey</dd>
           <dt>Color</dt>
-          <dd>Blue</dd>
+          <dd class="prodColor">Blue</dd>
           <dt>Inventory number</dt>
-          <dd>1163</dd>
+          <dd class="prodID">1163</dd>
         </dl>
-        <h1>Nike</h1>
-        <p>Nike, creating experiences for today’s athlete</p>
+        <h1 class="prodBrand">Nike</h1>
+        <p class="prodMotto">Nike, creating experiences for today’s athlete</p>
       </section>
     </main>
+    <footer>
+      <p>
+        All data comes from :
+        https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset
+      </p>
+    </footer>
+    <script src="js/product.js"></script>
   </body>
 </html>
